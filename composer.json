@@ -1,7 +1,7 @@
 {
-    "name": "dan612/base-components",
+    "name": "hounder/base-components",
     "description": "Base SDC components for site building.",
-    "type": "project",
+    "type": "drupal-module",
     "authors": [
         {
             "name": "Dan Chadwick",
