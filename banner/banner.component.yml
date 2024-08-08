@@ -1,0 +1,21 @@
+name: Banner
+props:
+  type: object
+  properties:
+    bannerText:
+      type: string
+      title: Banner Text
+      description: This is the text for the banner.
+    bannerImage:
+      type: string
+      title: Banner Image
+      description: This is the image for the banner.
+    bannerType:
+      type: string
+      title: Banner Type
+      description: The type of banner.
+      enum: ["full", "thin"]
+    addClasses:
+      type: string
+      title: Additonal Classes
+      description: String of additional classses to add to the banner.

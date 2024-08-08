@@ -1,0 +1,22 @@
+{% set classes = ['heading'] %}
+
+{% if color %}
+  {% set classes = classes|merge(['heading__' ~ color|clean_class]) %}
+{% endif %}
+
+{% if addClasses %}
+  {% set classes = classes|merge([addClasses])%}
+{% endif %}
+
+{% set heading = headingText.0['#context']['value']|default(headingText) %}
+
+{% if ariaLabel %}
+  <h{{ level }} id="{{ ariaLabel }}" class="{{ classes|join(" ")}}">{{ heading }}</h{{ level}}>
+{% else %}
+  <h{{ level }} class="{{ classes|join(" ")}}">
+    {{ heading }}
+    {% if subheading %}
+      <br><em>{{ subheading }}</em>
+    {% endif %}
+  </h{{ level}}>
+{% endif %}

@@ -1,0 +1,16 @@
+{%
+set classes = [
+  'banner',
+  'banner__' ~ bannerType|clean_class,
+]
+%}
+
+{% if addClasses %}
+  {% set classes = classes|merge([addClasses]) %}
+{% endif %}
+
+<div class="{{ classes|join(" ") }}" style="background-image: url({{ bannerImage }})">
+  <div class="banner__text container">
+    {{ include('lawa:heading', { level: '1', headingText: bannerText, color: textColor }, with_context = false) }}
+  </div>
+</div>

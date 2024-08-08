@@ -1,0 +1,27 @@
+@import 'src/sass/partials/variables';
+
+.heading {
+
+  margin: 0;
+
+  &__primary {
+    color: $primary_navy;
+  }
+
+  &__white {
+    color: $white;
+  }
+
+  &__black {
+    color: $black;
+  }
+
+  &__neutral {
+    color: $neutrals;
+  }
+
+  &__teal {
+    color: $teal;
+  }
+
+}

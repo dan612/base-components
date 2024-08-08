@@ -1,0 +1,12 @@
+{
+    "name": "dan612/base-components",
+    "description": "Base SDC components for site building.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Dan Chadwick",
+            "email": "dan@hounder.co"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,28 @@
+name: Heading
+props:
+  type: object
+  required:
+    - level
+  properties:
+    level:
+      type: string
+      title: Heading Level
+      description: 'The level of the heading, i.e. h1'
+      enum: ['1', '2', '3', '4', '5', '6']
+    headingText:
+      type: string
+      title: Heading Text
+      description: 'The text within the heading.'
+    color:
+      type: string
+      title: Heading Text Color
+      description: The color of the text for the heading.
+      enum: ['primary', 'secondary', 'white', 'black', 'neutral', 'teal']
+    addClasses:
+      type: string
+      title: Classes
+      description: Additional classes for the heading.
+    subheading:
+      type: string
+      title: Subheading
+      description: Text that can appear under the heading.

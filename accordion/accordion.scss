@@ -1,0 +1,59 @@
+.ib-accordion {
+
+    &__item {
+      margin: 10px 0;
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    }
+
+    &__headline {
+      background-color: #EFEFEF;
+      padding: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      h1, h2, h3, h4, h5, h6 {
+        font-size: 18px !important;
+        margin: 0 !important;
+        color: #3272b3;
+        --bs-heading-color: #3272b3;
+      }
+
+      &::before {
+        display: flex;
+        float: left;
+        content: "\002B";
+        font-size: 30px;
+        font-weight: 700;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--site-primary);
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        color: #fff;
+        margin-right: 10px;
+      }
+    }
+
+    &__body {
+      padding: 0 20px;
+      max-height: 0;
+      overflow: hidden;
+      will-change: max-height;
+      transition: all 0.25s ease-out;
+      align-items: center;
+
+      > :first-child {
+        margin: 20px 0;
+      }
+    }
+
+    &__active {
+      .ib-accordion__headline::before {
+        content: "\2212";
+      }
+    }
+}
+

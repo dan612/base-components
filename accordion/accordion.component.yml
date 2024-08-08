@@ -1,0 +1,21 @@
+name: Accordion
+props:
+  type: object
+  properties:
+    accordionType:
+      type: string
+      title: Accordion Type
+      description: 'The type of accordion.'
+slots:
+  headline:
+    title: Headline
+    required: true
+    description: This is the headline for an accordion.
+  body:
+    title: Body
+    required: true
+    description: This is the body for an accordion.
+libraryOverrides:
+  dependencies:
+    - core/drupal
+    - core/once

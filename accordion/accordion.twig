@@ -1,0 +1,14 @@
+{% set classes = [
+  'ib-accordion__item',
+  'ib-accordion__' ~ type|clean_class,
+] %}
+
+{% set ariaLabel = 'accordion-' ~ random(0, 10000)  %}
+<div class="{{ classes|join(" ") }}">
+  <div class="ib-accordion__headline">
+    {% block headline %}{% endblock %}
+  </div>
+  <div class="ib-accordion__body" aria-labelledby="{{ ariaLabel }}" aria-expanded="false">
+    {% block body %}{% endblock %}
+  </div>
+</div>
