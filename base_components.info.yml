@@ -1,0 +1,5 @@
+name: Hounder Base Components
+description: Base components for use in themes.
+core_version_requirement: ^10.3 || ^11
+type: module
+package: User interface

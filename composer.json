@@ -1,5 +1,5 @@
 {
-    "name": "hounder/base-components",
+    "name": "hounder/base_components",
     "description": "Base SDC components for site building.",
     "type": "drupal-module",
     "authors": [
